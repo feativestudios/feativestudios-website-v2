@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Arca Majora Ultra';
+    src: url('ArcaMajora-Ultra.eot');
+    src: local('Arca Majora Ultra'), local('ArcaMajora-Ultra'),
+        url('ArcaMajora-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('ArcaMajora-Ultra.woff2') format('woff2'),
+        url('ArcaMajora-Ultra.woff') format('woff'),
+        url('ArcaMajora-Ultra.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arca Majora';
+    src: url('ArcaMajora-ExtraBold.eot');
+    src: local('Arca Majora ExtraBold'), local('ArcaMajora-ExtraBold'),
+        url('ArcaMajora-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('ArcaMajora-ExtraBold.woff2') format('woff2'),
+        url('ArcaMajora-ExtraBold.woff') format('woff'),
+        url('ArcaMajora-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arca Majora ExtraBlack';
+    src: url('ArcaMajora-ExtraBlack.eot');
+    src: local('Arca Majora ExtraBlack'), local('ArcaMajora-ExtraBlack'),
+        url('ArcaMajora-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('ArcaMajora-ExtraBlack.woff2') format('woff2'),
+        url('ArcaMajora-ExtraBlack.woff') format('woff'),
+        url('ArcaMajora-ExtraBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arca Majora';
+    src: url('ArcaMajora-Bold.eot');
+    src: local('Arca Majora Bold'), local('ArcaMajora-Bold'),
+        url('ArcaMajora-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ArcaMajora-Bold.woff2') format('woff2'),
+        url('ArcaMajora-Bold.woff') format('woff'),
+        url('ArcaMajora-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arca Majora';
+    src: url('ArcaMajora-Black.eot');
+    src: local('Arca Majora Black'), local('ArcaMajora-Black'),
+        url('ArcaMajora-Black.eot?#iefix') format('embedded-opentype'),
+        url('ArcaMajora-Black.woff2') format('woff2'),
+        url('ArcaMajora-Black.woff') format('woff'),
+        url('ArcaMajora-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

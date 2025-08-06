@@ -1,0 +1,481 @@
+"use client";
+import Button from "@/app/components/Button";
+import ContactForm from "@/app/components/ContactForm";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
+export const metadata = {
+  robots: "noindex, nofollow",
+};
+const ArtAndDesign = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.5, // Trigger animation when 50% of the component is visible
+  });
+
+  const projects = [
+    {
+      pro1: "/assets/Frame-1439-1-4.jpg",
+      title: "AR App • Museum Těšínska",
+    },
+    {
+      pro2: "/assets/1-4.jpg",
+      title: "AR Experience • Doctors without borders",
+    },
+    {
+      pro3: "/assets/Frame-4.png",
+      title: "AR Gaming Experience – L’Oréal",
+    },
+  ];
+
+  const tools = [
+    { path: "/assets/figma-1.svg" },
+    { path: "/assets/adobe-illustrator.svg" },
+    { path: "/assets/adobe-photoshop.svg" },
+    { path: "/assets/adobe-2.svg" },
+    { path: "/assets/adobe-1.svg" },
+    { path: "/assets/adobe-substance-3d.svg" },
+    { path: "/assets/claptrap.svg" },
+    { path: "/assets/blender-1.svg" },
+    { path: "/assets/threejs.svg" },
+    { path: "/assets/nodejs.svg" },
+    { path: "/assets/google-cloud.svg" },
+    { path: "/assets/python.svg" },
+    { path: "/assets/godot.svg" },
+    { path: "/assets/unity-1.svg" },
+    { path: "/assets/unreal-1.svg" },
+  ];
+
+  return (
+    <div className="font-arca ">
+      <section className="h-dvh">
+        <div className="pt-[85px] h-full max-w-7xl mx-auto flex flex-row gap-1">
+          <div className="w-1/2 flex items-center justify-center px-10">
+            <div className="flex flex-col gap-20 ">
+              <div className="text-[50px] font-extrabold leading-[50px]">
+                METAVERSE DEVELOPMENT FOR BUSINESS
+              </div>
+              <div className="font-jost text-[16px] text-opacity-80 text-white">
+                Metaverse is a virtual 3D environment that contains and connects
+                various virtual worlds and can be navigated through an avatar
+                representing your identity. The main concepts of the metaverse
+                are business-relevant in today’s economy, which means that once
+                the metaverse is fully developed, it could profoundly change how
+                businesses and consumers interact with products, services, and
+                each other. Stepping into a new and highly immersive reality
+                helps companies acquire new and keep the existing customers,
+                allowing their users to socialize, learn, collaborate and play
+                in ways beyond what we could ever imagine.
+              </div>
+              <div>
+                <a href="#contact">
+                  <Button className={"h-[50px] px-5"}>
+                    Contact Us{" "}
+                    <span className="text-[20px] font-semibold ml-1">
+                      &#8681;
+                    </span>
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 flex items-end justify-end">
+            <img src="/assets/AR.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section className="SECTION-PERCENTAGES py-20 pt-28 font-jost">
+        <div className="flex flex-row items-center justify-center">
+          <div className="flex flex-col gap-3">
+            <div
+              className="flex flex-col gap-4 mt-20 flex-wrap items-center justify-center"
+              ref={ref}
+            >
+              <div className="flex flex-row gap-4">
+                <div className="w-[310px] bg-transparent bg-opacity-90 rounded-[15px] h-[136px] flex flex-col  items-center justify-center">
+                  <div className="font-normal  text-[75px]">
+                    {inView && <CountUp start={0} end={25} duration={2} />}%
+                  </div>
+                  <div className="text-darkLiver text-center px-5 text-[20px] font-semibold">
+                    WILL SPEND AT LEAST 1 HOUR/DAY IN THE METAVERSE
+                  </div>
+                </div>
+                <div className="w-[310px] bg-transparent bg-opacity-90 rounded-[15px] h-[136px] flex flex-col  items-center justify-center">
+                  <div className="font-normal  text-[75px]">
+                    {inView && <CountUp start={0} end={13} duration={2} />}%
+                  </div>
+                  <div className="text-darkLiver text-center px-5 text-[20px] font-semibold">
+                    EXPECTED GROWTH OF THE METAVERSE EACH YEAR
+                  </div>
+                </div>
+
+                <div className="w-[310px] bg-transparent bg-opacity-90 rounded-[15px] h-[136px] flex flex-col  items-center justify-center">
+                  <div className="font-normal  text-[75px]">
+                    {inView && <CountUp start={0} end={74} duration={2} />}%
+                  </div>
+                  <div className="text-darkLiver text-center px-7 text-[20px] font-semibold">
+                    OF ADULTS CONSIDER JOINING THE METAVERSE
+                  </div>
+                </div>
+                <div className="w-[310px] bg-transparent  bg-opacity-90 rounded-[15px] h-[136px] flex flex-col  items-center justify-center">
+                  <div className="font-normal  text-[75px]">
+                    {inView && <CountUp start={0} end={71} duration={2} />}%
+                  </div>
+                  <div className="text-darkLiver text-center px-7 text-[20px] font-semibold">
+                    INTEREST IN GLOBAL EXECUTIVES
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="VR-SOLUTIONS h-max mt-16">
+        <div className="max-w-7xl mx-auto flex flex-col gap-10 items-center justify-center">
+          <div className="text-[50px] font-extrabold leading-[52.5px]">
+            METAVERSE SOLUTIONS
+          </div>
+          <div className="grid grid-cols-2 gap-20 mt-16 justify-between place-content-between">
+            <div className="flex flex-col gap-10">
+              <div className=" text-[30px] font-extrabold leading-[34px]">
+                ENTER EXISTING METAVERSE
+              </div>
+              <div className="text-[16px] w-[80%] leading-[26px] font-normal font-jost">
+                There is a growing number of metaverses that offer properties
+                for sale. The conditions and prices vary from the Metaverse to
+                the Metaverse, so it’s worth researching before investing. You
+                can buy a property there, like a house, an island, or a piece of
+                land, build your brand’s branch, and thus immerse yourself in a
+                new era of doing business in the Metaverse. Major brands have
+                already recognized this opportunity and empowered their brand
+                with a metaverse branch, indicating that it will become a new
+                battleground for e-commerce.
+              </div>
+            </div>
+            <div>
+              <img
+                src="/assets/automotive-showroom-7-1-1-1.jpg"
+                alt=""
+                className="w-[532px] h-[371px] rounded-[10px]"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/assets/automotive-showroom-7-1-2-1.jpg"
+                alt=""
+                className="w-[532px] h-[371px] rounded-[10px]"
+              />
+            </div>
+            <div className="flex flex-col gap-10">
+              <div className=" text-[30px] font-extrabold leading-[34px]">
+                ADAPT YOUR METAVERSE
+              </div>
+              <div className="text-[16px] w-[80%] leading-[26px] font-normal font-jost">
+                With the endless potential Metaverse offers, some brands don’t
+                want to enter an existing one; they want a piece of their
+                Metaverse. But it’s not easy to build your own Metaverse, so the
+                possibility of adapting to an existing metaverse might be the
+                perfect solution. Some tools and platforms are open source and
+                allow users to adapt to their own Metaverse. One of the most
+                significant examples is Mozilla hubs, open-source engine member
+                applications that can be forked and made on your own.
+              </div>
+            </div>
+            <div className="flex flex-col gap-10">
+              <div className=" text-[30px] font-extrabold leading-[34px]">
+                ENTER EXISTING METAVERSE
+              </div>
+              <div className="text-[16px] w-[80%] leading-[26px] font-normal font-jost">
+                There is a growing number of metaverses that offer properties
+                for sale. The conditions and prices vary from the Metaverse to
+                the Metaverse, so it’s worth researching before investing. You
+                can buy a property there, like a house, an island, or a piece of
+                land, build your brand’s branch, and thus immerse yourself in a
+                new era of doing business in the Metaverse. Major brands have
+                already recognized this opportunity and empowered their brand
+                with a metaverse branch, indicating that it will become a new
+                battleground for e-commerce.
+              </div>
+            </div>
+            <div>
+              <img
+                src="/assets/automotive-showroom-7-1-1-1.jpg"
+                alt=""
+                className="w-[532px] h-[371px] rounded-[10px]"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/assets/automotive-showroom-7-1-2-1.jpg"
+                alt=""
+                className="w-[532px] h-[371px] rounded-[10px]"
+              />
+            </div>
+            <div className="flex flex-col gap-10">
+              <div className=" text-[30px] font-extrabold leading-[34px]">
+                ADAPT YOUR METAVERSE
+              </div>
+              <div className="text-[16px] w-[80%] leading-[26px] font-normal font-jost">
+                With the endless potential Metaverse offers, some brands don’t
+                want to enter an existing one; they want a piece of their
+                Metaverse. But it’s not easy to build your own Metaverse, so the
+                possibility of adapting to an existing metaverse might be the
+                perfect solution. Some tools and platforms are open source and
+                allow users to adapt to their own Metaverse. One of the most
+                significant examples is Mozilla hubs, open-source engine member
+                applications that can be forked and made on your own.
+              </div>
+            </div>
+            <div className="flex flex-col gap-10">
+              <div className=" text-[30px] font-extrabold leading-[34px]">
+                ENTER EXISTING METAVERSE
+              </div>
+              <div className="text-[16px] w-[80%] leading-[26px] font-normal font-jost">
+                There is a growing number of metaverses that offer properties
+                for sale. The conditions and prices vary from the Metaverse to
+                the Metaverse, so it’s worth researching before investing. You
+                can buy a property there, like a house, an island, or a piece of
+                land, build your brand’s branch, and thus immerse yourself in a
+                new era of doing business in the Metaverse. Major brands have
+                already recognized this opportunity and empowered their brand
+                with a metaverse branch, indicating that it will become a new
+                battleground for e-commerce.
+              </div>
+            </div>
+            <div>
+              <img
+                src="/assets/automotive-showroom-7-1-1-1.jpg"
+                alt=""
+                className="w-[532px] h-[371px] rounded-[10px]"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/assets/automotive-showroom-7-1-2-1.jpg"
+                alt=""
+                className="w-[532px] h-[371px] rounded-[10px]"
+              />
+            </div>
+            <div className="flex flex-col gap-10">
+              <div className=" text-[30px] font-extrabold leading-[34px]">
+                ADAPT YOUR METAVERSE
+              </div>
+              <div className="text-[16px] w-[80%] leading-[26px] font-normal font-jost">
+                With the endless potential Metaverse offers, some brands don’t
+                want to enter an existing one; they want a piece of their
+                Metaverse. But it’s not easy to build your own Metaverse, so the
+                possibility of adapting to an existing metaverse might be the
+                perfect solution. Some tools and platforms are open source and
+                allow users to adapt to their own Metaverse. One of the most
+                significant examples is Mozilla hubs, open-source engine member
+                applications that can be forked and made on your own.
+              </div>
+            </div>
+            <div className="flex flex-col gap-10">
+              <div className=" text-[30px] font-extrabold leading-[34px]">
+                ENTER EXISTING METAVERSE
+              </div>
+              <div className="text-[16px] w-[80%] leading-[26px] font-normal font-jost">
+                There is a growing number of metaverses that offer properties
+                for sale. The conditions and prices vary from the Metaverse to
+                the Metaverse, so it’s worth researching before investing. You
+                can buy a property there, like a house, an island, or a piece of
+                land, build your brand’s branch, and thus immerse yourself in a
+                new era of doing business in the Metaverse. Major brands have
+                already recognized this opportunity and empowered their brand
+                with a metaverse branch, indicating that it will become a new
+                battleground for e-commerce.
+              </div>
+            </div>
+            <div>
+              <img
+                src="/assets/automotive-showroom-7-1-1-1.jpg"
+                alt=""
+                className="w-[532px] h-[371px] rounded-[10px]"
+              />
+            </div>
+          
+            
+          </div>
+        </div>
+      </section>
+      <section className="GET-YOUR-VR-PROJECT-STARTED my-32 h-max w-full">
+        <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
+          <div className="flex flex-col gap-4 w-full">
+            <div className="font-semibold text-[50px] leading-[52px] ">
+            Get your AR project started
+            </div>
+            <div className="text-[20px] font-jost leading-[32px]">
+            Fill out our contact form below and get started on your project with YORD team.
+            </div>
+          </div>
+          <div>
+            <a href="#contact">
+              <Button className={"h-[50px] px-5"}>
+                Contact Us{" "}
+                <span className="text-[20px] font-semibold ml-1">&#8681;</span>
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="METAVERSE-BENEFITS  h-max mt-16">
+        <div className="max-w-7xl mx-auto flex flex-col gap-10 items-center justify-center">
+          <div className="text-[50px] font-extrabold leading-[52.5px]">
+            METAVERSE BENEFITS FOR BUSINESS
+          </div>
+          <div className="grid grid-cols-2 gap-20 mt-16 justify-between place-content-between">
+            <div className="flex flex-col gap-10 items-center justify-center">
+              <div className="flex flex-col gap-2">
+                <div className="font-jost text-[14px] leading-[23.45px] text-white text-opacity-70">
+                  METAVERSE BENEFITS
+                </div>
+                <div className=" text-[35px] font-extrabold leading-[34px]">
+                Did you know that Metaverse is believed to be….?
+                </div>
+              </div>
+              <div className="flex flex-col gap-8 mt-16">
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">
+                  – A breakthrough experience by 42% of global executives
+                </div>
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">– Used by 25% of people by 2026</div>
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">
+                  – A positive experience for their business by 71% of
+                  executives
+                </div>
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">
+                  – Worth more than a trillion in annual revenues by JP Morgan
+                </div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/assets/final-render-2.png"
+                alt=""
+                className="w-[532px]  rounded-[10px]"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/assets/final-city-1.png"
+                alt=""
+                className="w-[532px]  rounded-[10px]"
+              />
+            </div>
+            <div className="flex flex-col gap-10 items-start justify-center">
+              <div className="flex flex-col gap-2 items-start justify-start">
+                <div className="font-jost text-[14px] leading-[23.45px] text-white text-opacity-70">
+                MARKET VISION FOR THE METAVERSE
+                </div>
+                <div className=" text-[35px] font-extrabold leading-[34px]">
+                Have you heard...?
+
+                </div>
+              </div>
+              <div className="flex flex-col gap-8 mt-16">
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">
+                 
+
+– Global spending on VR/AR is expected to rise to $72.8 billion in 2024
+
+
+                </div>
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">– In 2023, the Metaverse market is expected to rise to 82 billion U.S. dollars</div>
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">
+                –  It is expected to surge to 678.8 billion U.S. dollars by 2030
+                </div>
+                <div className="text-[21px] w-[80%] leading-[26px] font-normal font-jost">
+                – Meta Reality Labs has already invested $10 billion in the Metaverse
+                </div>
+              </div>
+            </div>
+           
+            </div>
+            
+        </div>
+      </section> */}
+
+      <section className="SECTION-PROJECTS h-max max-w-7xl mx-auto flex flex-col gap-20 items-center justify-center py-28">
+        <div className="flex flex-col gap-5 text-center">
+          <h2 className="font-bold uppercase text-[50px] leading-[68px] tracking-[6px] text-center">
+          AR EXAMPLES
+          </h2>
+        </div>
+        <div className="flex h-full w-full items-center justify-center">
+          <div className="grid grid-cols-3 gap-10">
+            {projects.map((item, ind) => (
+              <div
+                key={ind}
+                className={`relative rounded-[5px] cursor-pointer `}
+              >
+                <div
+                  className="h-full w-full bg-red-500  absolute"
+                  style={{
+                    background:
+                      "linear-gradient(180deg, rgba(2, 0, 0, 0) 65%, #020000 89%)",
+                  }}
+                ></div>
+
+                <img
+                  src={Object.values(item)[0].toString()}
+                  alt=""
+                  className={`rounded-[5px]  cursor-pointer transition-all duration-300   `}
+                />
+                <div className="absolute bottom-20 font-bold text-[20px] leading-[25px] tracking-[6px] px-16 uppercase flex flex-row items-center justify-center text-center w-full cursor-pointer  ">
+                  <div className="absolute  sm:max-w-xl sm:mx-auto px-10">
+                    <br />
+                    <br />
+                    <a
+                      href="#"
+                      className="max-w-sm text-[21px] font-bold leading-[27px] tracking-[6px]"
+                    >
+                      <span className="link link-underline link-underline-black text-white">
+                        {" "}
+                        {Object.values(item)[1].toString()}
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section
+        className="KEY-TOOLS px-10 py-32 h-max pb-0
+       w-full "
+      >
+        <div className="flex flex-row items-center justify-center w-full">
+          <div className="flex flex-col gap-20 items-center justify-center w-full">
+            <div className="text-[40px] leading-[48px] font-[650]">
+              <p>
+                The Key Tools{" "}
+                <span className="text-bitterSweet">We Are Expert In</span>{" "}
+              </p>
+            </div>
+            <div className="grid grid-cols-5 gap-20 items-center   justify-center">
+              {tools
+                .slice()
+                .reverse()
+                .map((item, ind) => (
+                  <div key={ind}>
+                    <img src={item.path} alt="" className="relative z-20" />
+                  </div>
+                ))}
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="CONTACT-SECTION py-32 max-w-7xl mx-auto "
+        id="contact"
+      >
+        <ContactForm />
+      </section>
+    </div>
+  );
+};
+
+export default ArtAndDesign;

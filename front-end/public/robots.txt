@@ -1,0 +1,26 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /404
+Disallow: /500
+Disallow: /contact
+Disallow: /projects
+Disallow: /services
+Disallow: /services/
+Disallow: /services/*
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Host
+Host: https://www.feativestudios.com
+
+# Sitemaps
+Sitemap: https://www.feativestudios.com/sitemap.xml
