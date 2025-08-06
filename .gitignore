@@ -1,0 +1,9 @@
+# .gitignore
+node_modules/
+.env
+dist/
+build/
+.next/
+out/
+.DS_Store
+*.log
